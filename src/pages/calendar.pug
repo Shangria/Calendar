@@ -1,0 +1,23 @@
+.calendar
+    .calendar__event-button New event+
+    select.calendar__list-person
+        option(value='All members') All members
+        option(value='Maria') Maria
+        option(value='Bob') Bob
+        option(value='Alex') Alex
+    table.calendar__table
+        thead
+            tr
+                - allTages = ['Name','Monday','Tuesday','Wednesday','Thursday','Friday'];
+                each tag in allTages
+                    td=tag
+        tbody
+            tr
+                - selectTime=['10:00','11:00','12:00','13:00','14:00','15:00','16:00','17:00','18:00',];
+                    - for (let time=1; time<selectTime.length;time++)
+                        if selectTime[time]===1
+                            td=time
+                        else
+                            td
+
+
