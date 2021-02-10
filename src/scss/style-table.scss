@@ -1,0 +1,25 @@
+$style-border: 1px solid #e6e6e6;
+$main-color:  #e6e6e6;
+
+.calendar {
+  width: 100%;
+  border-collapse: collapse;
+  padding: 15px;
+
+  &__box{
+    display: flex;
+  }
+
+  &__head-table,
+  &__row-table,
+  &__cell-table {
+    border: $style-border;
+    padding: 10px;
+  }
+  &__head-table{
+    font-weight: bold;
+    background-color:$main-color;
+    text-align: center;
+  }
+
+}

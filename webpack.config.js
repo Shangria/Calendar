@@ -74,6 +74,10 @@ module.exports = (argv) => ({
             },
         ]  
     },
+    watchOptions: {
+        aggregateTimeout: 500,
+        poll: 1000 // порверяем изменения раз в секунду
+    },
     devtool: argv.mode === 'development' ?
         'eval-source-map' :
         undefined
