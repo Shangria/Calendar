@@ -11,14 +11,11 @@ $main-color: #e6e6e6;
     justify-content: flex-end;
   }
   &__event-button, &__list-person{
-    padding: 10px 30px;
-    border-radius: 3px;
-    margin: 0 0 10px 10px;
+   @extend .btn
   }
 
   &__event-button {
     background-color: $main-color;
-    border: black 1px solid;
   }
 
   &__head-table,

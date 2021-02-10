@@ -1,3 +1,8 @@
 @import 'reset';
-@import './src/scss/style-table';
+
+@import '../scss/global-styles/btn';
+
+@import '../components/calendar-table/calendar';
+
+@import '../components/event/event';
 

@@ -1,0 +1,34 @@
+.create-event {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-size: 25px;
+  margin-top: 30px;
+
+  &__data-container {
+    border: $style-border;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__box {
+    margin: 15px;
+    display: flex;
+  }
+
+  &__data-title {
+    width: 200px;
+  }
+
+  &__box-button {
+    display: flex;
+    margin-top: 20px;
+  }
+
+  &__button {
+    background-color: $main-color;
+    font-size: 15px;
+    @extend .btn
+  }
+}
