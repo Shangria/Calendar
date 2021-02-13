@@ -3,7 +3,7 @@ const fs = require('fs');
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const CopyPlugin = require("copy-webpack-plugin");
+
 
 const PAGES_DIR = './src/pages';
 const PAGES = fs.readdirSync(PAGES_DIR).filter(fileName => fileName.endsWith('.pug'));
@@ -11,7 +11,8 @@ const PAGES = fs.readdirSync(PAGES_DIR).filter(fileName => fileName.endsWith('.p
 
 module.exports = (argv) => ({
     entry : {
-        index: './src/js/index.js',
+        "index": './src/js/index.js',
+        "create-event": './src/js/create-event.js',
     },
     output: {
         publicPath : './',
@@ -78,7 +79,5 @@ module.exports = (argv) => ({
         aggregateTimeout: 500,
         poll: 1000
     },
-    devtool: argv.mode === 'development' ?
-        'eval-source-map' :
-        undefined
+    mode: 'development'
 });

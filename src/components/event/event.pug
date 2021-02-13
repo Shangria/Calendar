@@ -2,17 +2,17 @@
     .create-event__data-container
         .create-event__box
             .create-event__data-title Name of the even:
-            input(type='text')
+            input#event-name(type='text')
         .create-event__box
             .create-event__data-title Participants:
-            select.create-event_list-participants
+            select(multiple).create-event_list-participants#list-participants
                 option(value='All members') All members
                 option(value='Maria') Maria
                 option(value='Bob') Bob
                 option(value='Alex') Alex
         .create-event__box
             .create-event__data-title Day:
-            select.create-event_list-days
+            select.create-event_list-days#list-days
                 option(value='Monday') Monday
                 option(value='Tuesday') Tuesday
                 option(value='Wednesday') Wednesday
@@ -20,7 +20,7 @@
                 option(value='Friday') Friday
         .create-event__box
             .create-event__data-title Time:
-            select.create-event_list-days
+            select.create-event_list-days#list-time
                 option(value='10:00') 10:00
                 option(value='11:00') 11:00
                 option(value='12:00') 12:00
@@ -32,4 +32,4 @@
                 option(value='18:00') 18:00
     .create-event__box-button
         .create-event__button Cancel
-        .create-event__button Create
+        .create-event__button#event-btn Create
